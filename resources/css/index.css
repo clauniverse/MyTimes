@@ -11,35 +11,37 @@ header {
   font-size: 14px;
   font-weight: bold;
   margin-top: -10px;
-
 }
+
 .logo {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 30px;
 }
+
 .logo img {
   width: 70px;
   height: 60px;
   margin-right: 12px;
 }
+
 .logo span {
   color: mediumaquamarine;
 }
+
 header nav {
   padding-right: 40px;
 }
 
 nav span {
-	display: inline-block;
+  display: inline-block;
   align-items: stretch;
   width: 60px;
 }
 
 /*div {
   border: 1px solid black;
-
 }*/
 
 .content {
@@ -50,7 +52,7 @@ nav span {
 
 .column.large {
   width: 630px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 
@@ -58,18 +60,16 @@ nav span {
   width: 300px;
   display: flex;
   flex-direction: column;
-
 }
 
 .column.small {
   width: 240px;
   display: flex;
   flex-direction: column;
-
 }
 
 .image {
-  display: inline-flex;
+  display: flex;
  }
 
  .image h1 {
@@ -93,16 +93,14 @@ nav span {
 
   .secondImage {
     background-image: url("../pictures/img-story-2.png");
-    padding-bottom: 215px;
     text-align: center;
-    flex-direction: row;
+    height: 300px;
   }
 
   .thirdImage {
     background-image: url("../pictures/img-story-3.png");
-    padding-bottom: 180px;
     text-align: center;
-    flex-direction: row;
+    height: 300px;
   }
 
   .fourthImage {
@@ -115,10 +113,23 @@ nav span {
 .secondStory,
 .thirdStory,
 .newsbites {
-  display: flex;
+  display: inline-flex;
   font-family: Georgia;
   font-size: 17px;
   color: black;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.secondStory, .thirdStory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
 }

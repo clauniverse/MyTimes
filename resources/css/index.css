@@ -112,12 +112,18 @@ nav span {
 .firstStory,
 .secondStory,
 .thirdStory,
-.newsbites {
-  display: inline-flex;
+            {
+  display: flex;
   font-family: Georgia;
   font-size: 17px;
   color: black;
   align-items: flex-start;
+  flex-direction: column;
+}
+
+.newsbites {
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -132,4 +138,52 @@ nav span {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
+}
+
+.newsbites span {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  list-style: none;
+  padding: 0px;
+  align-items: center;
+}
+
+ul li {
+  border-bottom: 1px solid black;
+  /*border-top: 1px solid black;*/
+  margin: 0;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+}
+
+.footerTitle {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.copywright {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+
 }
